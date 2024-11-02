@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/5.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.1/ref/settings/
 """
-
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -25,7 +25,12 @@ SECRET_KEY = 'django-insecure-5krc+(kxw2g9z(of^#&y#evyay3z_4fze+t4!9lu%dxng8zue*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'DropwebSite.com', 'Drop.mywebsite.com', '192.168.1.1']
+ALLOWED_HOSTS = [
+    '185.199.108.153',      # IP-адрес вашего сервера
+    'DropwebSite.com',      # Основной домен
+    'Drop.mywebsite.com'    # Поддомен
+]
+
 
 
 
@@ -124,3 +129,5 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
