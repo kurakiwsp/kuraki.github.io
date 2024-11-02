@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+      <link rel="icon" href="https://media.discordapp.net/attachments/1287557409170260011/1301943335845367900/33mIMce.png?ex=6727a238&is=672650b8&hm=0cd7c5e94a0a7ccf0c12d159971e957b2474c3d5aeff32489ff4491740676619&=&width=671&height=671" type="image/png">
+</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Документация</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: flex-start; /* Выравнивание вверх */
+            flex-direction: column; /* Вертикальное выравнивание */
+            color: white;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+            background: linear-gradient(45deg, #000000, #434343); /* Черный и темно-серый градиент */
+            background-size: 400% 400%;
+            animation: gradientAnimation 10s ease infinite;
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .header {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        .header a {
+            text-decoration: none;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        h1 {
+            margin: 70px 0 10px 20px; /* Убираем нижний отступ и добавляем верхний и левый */
+            text-align: left;
+            font-size: 36px; /* Размер текста заголовка */
+        }
+
+        h2 {
+            margin-top: 10px; /* Отступ сверху для нового заголовка */
+            text-align: left; /* Выравниваем текст по левому краю */
+            padding-left: 20px; /* Отступ слева */
+            font-size: 28px; /* Размер текста подзаголовка */
+        }
+
+        p {
+            padding-left: 20px; /* Отступ слева для абзаца */
+            font-size: 20px; /* Размер текста абзаца */
+        }
+
+        .separator {
+            display: flex;
+            flex-direction: column; /* Вертикальная компоновка */
+            align-items: flex-start; /* Выравнивание влево */
+            width: 70%; /* Ширина линии */
+            margin: 20px 0 20px 20px; /* Отступы для линии */
+        }
+
+        hr {
+            width: 100%; /* Линия займет всё оставшееся пространство */
+            height: 2px; /* Высота линии */
+            background-color: white; /* Цвет линии */
+            border: none; /* Убираем стандартные границы */
+        }
+
+        .line-text {
+            margin-top: 5px; /* Отступ сверху для текста */
+            font-size: 24px; /* Увеличенный размер текста */
+            color: white; /* Цвет текста */
+            font-weight: bold; /* Жирный текст */
+        }
+
+        .additional-text {
+            margin-top: 20px; /* Отступ сверху для второго текста */
+            font-size: 20px; /* Размер текста */
+            color: white; /* Цвет текста */
+            font-weight: normal; /* Нормальный вес текста */
+        }
+
+        .extra-text {
+            margin-top: 10px; /* Отступ сверху для третьего текста */
+            font-size: 18px; /* Размер текста */
+            color: white; /* Цвет текста */
+            font-weight: normal; /* Нормальный вес текста */
+            display: block; /* Отображение в столбик */
+            line-height: 1.5; /* Высота строки для лучшей читаемости */
+        }
+
+        .small-text {
+            margin-top: 20px; /* Отступ сверху для мелкого текста */
+            font-size: 20px; /* Размер мелкого текста */
+            color: white; /* Цвет мелкого текста */
+            font-weight: normal; /* Нормальный вес текста */
+        }
+
+        .tiny-text {
+            margin-top: 20px; /* Отступ сверху для ещё более мелкого текста */
+            font-size: 18px; /* Размер ещё более мелкого текста */
+            color: white; /* Цвет мелкого текста */
+            font-weight: normal; /* Нормальный вес текста */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html">Drop</a>
+    </div>
+    <h1>Вас приветствует Документация Бота Drop</h1>
+    <h2>Основные функции бота</h2> <!-- Новый заголовок под основным -->
+    <p>В данной записи мы расскажем вам о функциях Бота, на чём он написан, и немного информации о его создателях</p>
+
+    <div class="separator">
+        <hr>
+        <span class="line-text">О создателях</span> <!-- Увеличенный текст под линией -->
+        <span class="additional-text">Данный Бот и Сайт создавались двумя людьми. Наши Discord никнеймы кураки, копи ( тест ) </span> <!-- Новый текст под первым текстом -->
+        <span class="extra-text">Немного о самих создателях. Создателям 99 и 99 лет.<br>Идея создания Бота всплыла внезапно. Дальше текст<br>Еще текст</span> <!-- Новый текст под дополнительным текстом -->
+        <hr> <!-- Добавленная палочка-разделитель -->
+        <span class="line-text">На чём написан данный Бот</span> <!-- Жирный текст под новой линией -->
+        <span class="small-text">Бот написан на Python 3.12 с использованием библиотеки Disnake 2.9.2.</span> <!-- Мелкий текст под жирным -->
+        <hr> <!-- Добавленная палочка-разделитель -->
+        <span class="line-text">Команды</span> <!-- Жирный текст под новой линией -->
+        <span class="tiny-text">/команда - текст<br>/команда - текст<br>/команда - текст<br>/команда - текст<br>/команда - текст<br>/команда - текст<br>/команда - текст<br>/команда - текст<br>/команда - текст</span> <!-- Ещё более мелкий текст под жирным -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
